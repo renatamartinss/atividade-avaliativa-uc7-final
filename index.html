@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Loja de Eletrodomésticos</title>
+</head>
+<body>
+    <h1>Loja de Eletrodomésticos</h1>
+
+    <h2>Cadastrar Cliente</h2>
+    <form id="clienteForm">
+        <label for="nomeCliente">Nome:</label>
+        <input type="text" id="nomeCliente" required>
+        <label for="emailCliente">Email:</label>
+        <input type="email" id="emailCliente" required>
+        <button type="button" onclick="cadastrarCliente()">Cadastrar Cliente</button>
+    </form>
+
+    <h2>Cadastrar Produto</h2>
+    <form id="produtoForm">
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" required>
+        <label for="precoProduto">Preço do Produto:</label>
+        <input type="text" id="precoProduto" required>
+        <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
+    </form>
+
+    <h2>Clientes Cadastrados</h2>
+    <ul id="clientes-list"></ul>
+
+    <h2>Produtos Cadastrados</h2>
+    <ul id="produtos-list"></ul>
+</body>
+</html>
